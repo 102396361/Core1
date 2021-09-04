@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Noyau1 </string>
+    <string name="score">But</string>
+    <string name="steal">Voler</string>
+    <string name="reset">Réinitialiser</string>
+</resources>

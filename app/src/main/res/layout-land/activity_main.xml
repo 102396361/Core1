@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="90sp"
+        app:layout_constraintBottom_toTopOf="@id/stealBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/scoreBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/score"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/stealBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/score" />
+
+    <Button
+        android:id="@+id/stealBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/steal"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/resetBtn"
+        app:layout_constraintStart_toEndOf="@id/scoreBtn"
+        app:layout_constraintTop_toBottomOf="@id/score" />
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/reset"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/stealBtn"
+        app:layout_constraintTop_toBottomOf="@id/score" />
+</androidx.constraintlayout.widget.ConstraintLayout>
